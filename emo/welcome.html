@@ -38,24 +38,24 @@
 
 <body id="page-top">
 
-    <nav id="main" class="navbar navbar-default navbar-fixed-top bg-primary">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="">Emotional</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Emotional</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#people">People</a>
+                        <a class="page-scroll" href="login">Login</a>
                     </li>
                     <li>
-                        <a href="talks.html">Talks</a>
+                        <a class="page-scroll" href="#why">About</a>
                     </li>
                     <!--
                     <li>
@@ -63,7 +63,7 @@
                     </li>
                     -->
                     <li>
-                        <a class="page-scroll" href="#logout">UserName <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+                        <a class="page-scroll" href="#contact">Find Us</a>
                     </li>
                 </ul>
             </div>
@@ -72,121 +72,220 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <section>
+    <header>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>What are you feeling today?</h2>
-                    <p class="text-muted">Simple choose a feeling. If you can't choose, write one.</p>
-                    <p class="text-muted">It's just you here. Be honest. Be youself.</p>
-                    <div class="text-center form-group style-form style-input clearfix">
-                        <form id="form-login">
-                            <input id="feeling" placeholder="Type here to serch or create..." type="text">
+            <div class="showcase-pagination hidden-xs hidden-sm">
+                <a class="page-scroll" href="#page-top"><div class="dot active" title="Find yourself here."></div></a>
+                <a class="page-scroll" href="#why"><div class="dot" title="Why should you?"></div></a>
+                <a class="page-scroll" href="#last"><div class="dot" title="We're amazing."></div></a>
+                <a class="page-scroll" href="#contact"><div class="dot" title="Find us."></div></a>
+            </div>
+
+            <div class="header-content">
+                <div class="header-content-inner">
+
+                    <h2><strong>Emotional</strong></h2>
+                    <h3>Personal. Anonymous. Free. </h3>
+                    <hr class="colorgraph"><br>
+                    <div class="form-group style-form style-input clearfix">
+                        <form id="form-login" class="hidden">
+                            <input id="username" placeholder="username" type="text">
+                            <input id="password" placeholder="password" type="password" class="hidden">
                         </form>
                         <a href="#" id="next" class="btn btn-outline btn-block btn-xl page-scroll hidden">Next</a>
+                    </div>
+                    <div class="form-group style-form style-input clearfix">
+                        <form id="form-join" class="hidden">
+                            <input id="newusername" placeholder="pick a username" type="text">
+                            <input id="newpassword" placeholder="super secret password" type="password" disabled>
+                            <input id="confirmpsw" placeholder="confirm your password" type="password" disabled>
+                        </form>
+                        <a href="index.html" id="confirm" class="btn btn-outline btn-block btn-xl page-scroll hidden">Confirm</a>
+                    </div>
+
+                    <a href="#" id="login" class="btn btn-outline btn-block btn-xl page-scroll">Login</a>
+                    <a href="#" id="join" class="btn btn-outline btn-block btn-xl page-scroll">Get Started</a>
+                    <a href="#why" id="intro" class="btn btn-outline btn-block btn-xl page-scroll">Why should I?</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="why" class="features">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Emotional</h2>
+                        <p class="text-muted">Show what you feel.</p>
+                        <hr>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-1">
-                    <a data-slide="prev" href="#emotions" class="left emotions-control"><i class="fa fa-chevron-left"></i></a>
-                </div>
-                <div class="col-lg-10">
-                    <div class="row">
-                        <div id="emotions" class="carousel slide carousel-fade carousel-overflow" data-ride="carousel">
-                            
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-light btn btn-emotion btn-outline btn-block btn-xl page-scroll">Light</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-dark btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-red btn btn-emotion btn-outline btn-block btn-xl page-scroll"> Red </a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-dark-red btn btn-emotion btn-outline btn-block btn-xl page-scroll">Wine</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-blue btn btn-emotion btn-outline btn-block btn-xl page-scroll">Blue</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-dark-blue btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark Blue</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-pink btn btn-emotion btn-outline btn-block btn-xl page-scroll">Pink</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-dark-pink btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark Pink</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-orange btn btn-emotion btn-outline btn-block btn-xl page-scroll">Orange</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-dark-orange btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark Orange</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-green btn btn-emotion btn-outline btn-block btn-xl page-scroll">Green</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#" class="emotion-dark-green btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark Green</a>  
-                                    </div>
+                <div class="col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-pencil text-primary"></i>
+                                    <h3>Express</h3>
+                                    <p class="text-muted">Tell the world what you're feeling anonymously.</p>
                                 </div>
-
-                                <div class="item">
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-yellow btn btn-emotion btn-outline btn-block btn-xl page-scroll">Yellow</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-dark-yellow btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark Yellow</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-brown btn btn-emotion btn-outline btn-block btn-xl page-scroll">Brown</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-dark-brown btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark Brown</a>
-                                    </div>  
-                                </div>
-
-                                <div class="item">
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-yellow btn btn-emotion btn-outline btn-block btn-xl page-scroll">Yellow</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-dark-yellow btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark Yellow</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-brown btn btn-emotion btn-outline btn-block btn-xl page-scroll">Brown</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-dark-brown btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark Brown</a>
-                                    </div>  
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-purple btn btn-emotion btn-outline btn-block btn-xl page-scroll">Purple</a>  
-                                    </div>
-                                    <div class="col-md-3">
-                                      <a href="#" class="emotion-dark-purple btn btn-emotion btn-outline btn-block btn-xl page-scroll">Dark Purple</a>
-                                    </div>
-                                </div>
-
                             </div>
-
-                            <!-- Left and right controls -->
-
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-people text-primary"></i>
+                                    <h3>Find people</h3>
+                                    <p class="text-muted">They will feel the same way.</p>
+                                </div>
+                            </div>
                         </div>
-
+                        <div class="row">
+                            <div class="feature-item">
+                                <i class="icon-magnet text-primary"></i>
+                                <h3>Connect</h3>
+                                <p class="text-muted">We will connect you to these people.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-bubble text-primary"></i>
+                                    <h3>Talk</h3>
+                                    <p class="text-muted">You understand and can help each other.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-heart text-primary"></i>
+                                    <h3>Remember you're loved</h3>
+                                    <p class="text-muted">Come back every day.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-1">
-                    <a data-slide="next" href="#emotions" class="right emotions-control"><i class="fa fa-chevron-right"></i></a>
-                </div>
-            </div>    
+            </div>
         </div>
-        
     </section>
+
+    <!--
+    <section id="download" class="download bg-primary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
+                    <p>We're everywhere.</p>
+                    <div class="list-inline">
+                        <li><i class="fa fa-globe"></i> Web</li>
+                        <li><i class="fa fa-apple"></i> IOS</li>
+                        <li><i class="fa fa-android"></i> Android</li>
+                        <li><i class="fa fa-windows"></i> Windows</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <section  id ="last" class="cta">
+        <div class="cta-content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Sometimes a talk with a stranger is all we need.<br>Try it now.</h2>
+                        <a href="#contact" class="btn btn-outline btn-xl page-scroll">I'm in!</a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner">
+
+                          <!-- Quote 1 -->
+                          <div class="item active">
+                            <blockquote>
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                                  <small>Someone</small>
+                                </div>
+                              </div>
+                            </blockquote>
+                          </div>
+                          <!-- Quote 2 -->
+                          <div class="item">
+                            <blockquote>
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                                  <small>Someone</small>
+                                </div>
+                              </div>
+                            </blockquote>
+                          </div>
+                          <!-- Quote 3 -->
+                          <div class="item">
+                            <blockquote>
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan.</p>
+                                  <small>Someone again</small>
+                                </div>
+                              </div>
+                            </blockquote>
+                          </div>
+                        </div>
+
+                        <!-- Carousel Buttons Next/Prev -->
+                        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <section id="contact" class="contact bg-primary">
+        <div class="container">
+            <h2>You are not alone. We're here for you.</h2>
+            <ul class="list-inline list-social">
+                <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="social-github">
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe"></i></a>
+                </li>
+            </ul>
+            <a href="#" id="join" class="btn btn-outline btn-xl page-scroll">Get Started</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2017 Emotional. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="lib/jquery/jquery.min.js"></script>
