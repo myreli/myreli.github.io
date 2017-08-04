@@ -42,7 +42,7 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand page-scroll" href="">Emotional</a>
                 </div>
@@ -82,7 +82,7 @@
             <div class="row">
                 <div class="conversation-wrap col-lg-3">
 
-                    <div class="btn-panel btn-panel-conversation">
+                    <div class="btn-panel-conversation">
                         <div class="text-center form-group style-form style-input clearfix">
                             <form id="form-login">
                                 <input placeholder="Search..." type="text">
@@ -180,8 +180,8 @@
                     </div>
                 </div>
 
-                <div class="message-wrap col-lg-9">
-                    <div class="msg-wrap">
+                <div class="message-wrap col-lg-9 ">
+                    <div class="msg-wrap hidden-sm hidden-xs">
 
                         <div class="media msg ">
                             <div class="media-body">
@@ -234,18 +234,66 @@
 
                     </div>
 
-                    <div class="send-wrap ">
+                    <div class="send-wrap hidden-sm hidden-xs">
                         <textarea id="send-message-input" class="form-control send-message" rows="3" placeholder="Write a reply..."></textarea>
                     </div>
-                    <div class="btn-panel">
-                        <a href="" class="col-lg-3 btn send-message-btn" role="button"><i class="fa fa-address-book-o"></i> About NaimSak</a>
-                        <a href="" class="col-lg-3 btn send-message-btn" role="button"><i class="fa fa-gears"></i> Settings</a>
-                        <a href="" class=" col-lg-3 btn send-message-btn " role="button"><i class="fa fa-cloud-upload"></i> Add Files</a>               
-                        <a href="" class=" col-lg-3 btn send-message-btn " role="button"><i class="fa fa-send-o"></i> Send Message</a>
+                    <div class="btn-panel hidden-sm hidden-xs">
+                        <a href="" class=" col-lg-3 col-xs-6 col-sm-6 btn send-message-btn " data-toggle="modal" data-target="#reportModal" data-user="NaimSak" data-user-id="id" role="button"><i class="fa fa-minus-circle"></i> Report</a> 
+                        <a href="" class="col-lg-3 col-xs-6 col-sm-6 btn send-message-btn" role="button"><i class="fa fa-address-book-o"></i> NaimSak</a>
+                        <a href="" class="col-lg-3 col-xs-6 col-sm-6 btn send-message-btn" role="button"><i class="fa fa-gears"></i> Settings</a>
+                        <a href="" class=" col-lg-3 col-xs-6 col-sm-6 btn send-message-btn " role="button"><i class="fa fa-send-o"></i> Send</a>
+                    </div>
+                    
+                    <!-- report modal --> 
+                    <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                              <h4 class="modal-title" id="exampleModalLabel">Report</h4>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <input type="hidden" class="form-control" id="report-userid">
+                                <div class="form-group">
+                                    <label for="recipient-name" class="form-control-label">Why</label>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Option 1</label>
+                                    </div>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Option 2</label>
+                                    </div>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Option 3</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="message-text" class="form-control-label">Message:</label>
+                                  <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">I've read terms and bla.</label>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn send-message-btn" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn send-message-btn">Report</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- /modal -->
+                    
+                    <div class="text-center text-muted visible-xs visible-sm">
+                        Select a conversation. 
                     </div>
                 </div>
             </div>    
         </div>
+
 
         <!-- jQuery -->
         <script src="lib/jquery/jquery.min.js"></script>
@@ -261,6 +309,17 @@
                 var $talk = $(".msg-wrap");
                 $talk.scrollTop($talk.height());
             }
+
+            $('#reportModal').on('show.bs.modal', function (event) {
+              var button = $(event.relatedTarget) // Button that triggered the modal
+              var user = button.data('user') // Extract info from data-* attributes
+              var userid = button.data('user-id')
+              // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+              // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+              var modal = $(this)
+              modal.find('.modal-title').text('Report ' + user)
+              modal.find('.modal-body input').first().val(userid)
+            });
         </script>
 
     </body>
