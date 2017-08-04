@@ -207,7 +207,21 @@
 
     <!-- Theme JavaScript -->
     <script src="js/emotional.js"></script>
-
+    <script>
+        $(".btn-emotion").on("mouseenter", function()
+    {
+        var cor =$(this).css("border-color");
+        $(this).css("color", "white");
+        $(this).css("background-color", cor);
+        $(this).css("border-color", cor);
+    })
+    $(".btn-emotion").on("mouseleave", function () {
+        var cor = $(this).css("border-color");
+        $(this).css("color", cor);
+        $(this).css("background-color", "white");
+       
+    })
+    </script>
 </body>
 
 </html>
