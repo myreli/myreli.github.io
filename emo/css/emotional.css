@@ -395,6 +395,10 @@ footer ul li a.active {
   background: -webkit-linear-gradient(#7e4294, #C13448);
   background: linear-gradient(#7e4294, #C13448);
 }
+.modal-theme .modal-header {
+   background-color: #7e4294;
+   color: white
+}
 .text-primary {
   color: #7e4294;
 }
@@ -423,9 +427,7 @@ footer ul li a.active {
 .btn-emotion:focus,
 .btn-emotion:active,
 .btn-emotion.active {
-  color: white;
-  background-color: #222;
-  border-color: #222;
+  
 }
 .btn {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
@@ -727,4 +729,84 @@ body {
 }
 .emotion-dark-purple {
   color: #5a465c
+}
+.bg-theme-purple {
+  color: #fff;
+  background-color: #7b4397
+}
+.bg-theme-pink {
+  color: #fff;
+  background-color: #dc2430
+}
+.emotion-bg-light {
+  color: #222;
+  background-color: #a9a9a9
+}
+.emotion-bg-dark {
+  color: #fff;
+  background-color: #080808
+}
+.emotion-bg-red {
+  color: #fff;
+  background-color: #b22222  
+}
+.emotion-bg-dark-red, .emotion-bg-wine {
+  color: #fff;
+  background-color: #7c0a02  
+}
+.emotion-bg-blue {
+  color: #fff;
+  background-color: #779ecb
+}
+.emotion-bg-dark-blue {
+  color: #fff;
+  background-color: #233d5b
+}
+.emotion-bg-pink {
+  color: #fff;
+  background-color: #f685af  
+}
+.emotion-bg-dark-pink {
+  color: #fff;
+  background-color: #e0115f  
+}
+.emotion-bg-orange {
+ color: #fff;
+ background-color: #ffb347   
+}
+.emotion-bg-dark-orange {
+ color: #fff;
+ background-color: #ff8547   
+}
+.emotion-bg-green {
+  color: #fff;
+  background-color: #77dd77
+}
+.emotion-bg-dark-green {
+  color: #fff;
+  background-color: #155415
+}
+.emotion-bg-yellow {
+  color: #222;
+  background-color: #fdfd96
+}
+.emotion-bg-dark-yellow {
+  color: #fff;
+  background-color: #dede05
+}
+.emotion-bg-brown {
+  color: #fff;
+  background-color: #836953
+}
+.emotion-bg-dark-brown {
+  color: #fff;
+  background-color: #352a21
+}
+.emotion-bg-purple {
+  color: #fff;
+  background-color: #b39eb5
+}
+.emotion-bg-dark-purple {
+  color: #fff;
+  background-color: #5a465c
 }

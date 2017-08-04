@@ -88,19 +88,16 @@ $.fn.carouselHeights = function() {
     var items = $(this), //grab all slides
         heights = [], //create empty array to store height values
         tallest; //create variable to make note of the tallest slide
-    console.log("items: " + items);
 
     var normalizeHeights = function() {
 
         items.each(function() { //add heights to array
             heights.push($(this).parent().height()); 
-            console.log("h: " + $(this).parent().height());
         });
         tallest = Math.max.apply(null, heights); //cache largest value
         console.log("mh: " + tallest);
         items.each(function() {
             $(this).css('min-height',tallest + 'px');
-            console.log("new h:" + $(this).height());
         });
     };
 
