@@ -1,0 +1,422 @@
+body {
+	font-family: 'Advent Pro';
+}
+
+a, a:link, a:active, a:visited {
+    text-decoration: none;
+    outline: none;
+    color: gray;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+hr.dark {
+    margin: 0 auto;
+    width: 95%;
+    border: gray solid 1px;
+}
+
+hr.light {
+    margin: 0 auto;
+    width: 95%;
+    border: lightgray solid 1px;
+}
+
+#alert:target {
+    display: none;
+}
+
+#alert {
+    margin: 10px;
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+}
+
+#alert a.alert {
+    float: right;
+    font-weight: bolder;
+}
+
+.button {
+  margin: 2px;
+  width: 80%;
+  padding: 10px;
+  color: white !important; 
+  background-color: darkgray;
+  border: 1px solid darkgray;
+}
+
+.button:hover {
+    color: darkgray !important;
+    background-color: white;
+}
+
+.demo {
+    color: lightgray;
+}
+
+.content {
+	padding: 20px;
+}
+
+.content-title {
+	width: 25%;
+  text-align: left;
+}
+
+.content-title h3 {
+  font-size: 1em
+}
+
+.content-title hr {
+  margin: 0;
+	width: 25%;
+	border: 1px solid gray;
+}
+
+.content-body {
+	padding: 20px;
+}
+
+.form {
+  padding: 5px;
+  margin: 5px;
+}
+
+.form input {
+    color: black;
+    background-color: white;
+    border: lightgray solid 1px;
+    padding: 5px;
+}
+
+.form input[type='search'] {
+  background: url(img/search-icon.png) no-repeat;
+  background-position: 99% 5px;
+}
+
+.form input:focus {
+  border-color: gray;
+  outline: none;
+  outline-style: none
+}
+
+.form input[type='search']:focus {
+  outline: none;
+  outline-style: none
+}
+
+.banner a {
+    text-decoration: none;
+}
+.banner img {
+    max-height: 65%;
+    max-width: 65%;
+    padding: 10px
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 25px;
+}
+
+.banner h1::first-letter {
+	font-size: 150%;
+	font-family: 'tom handwritten new';
+}
+
+.banner .banner-body {
+  margin-top: -2.7em;
+}
+ 
+.banner .banner-footer {
+    text-align: center;
+}
+
+.banner .banner-footer a {
+    display: inline-block;
+}
+
+.author {
+	margin: 2px;
+	padding: 10px; 
+}
+
+.author .author-title {
+	text-align: center;
+}
+
+.author .author-title h1{
+	font-size: 5em;
+}
+
+.author .author-body {
+	padding: 5px;
+}
+
+.author .author-body img {
+	float: right;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.author .author-source {
+	padding: 10px;
+}
+
+.author .author-source p::first-letter {
+	font-size: 2em;
+}
+
+.author-works {
+    padding: 15px;
+}
+
+.author-works .container-works {
+  position: relative;
+  width: 95%;
+  min-height: 400px; 
+  height: 80%;
+}
+
+.author-works .container-works .tab-check {
+  display: none; 
+}
+.author-works .container-works .tab-button:first-of-type {
+  border-top: lightgray solid 1px;
+}
+.author-works .container-works .tab-check:checked + .tab-button {
+  border-left: none;
+}
+.author-works .container-works .tab-check:checked + .tab-button:first-of-type {
+  border-left: none;
+  border-top: none;
+}
+.author-works .container-works .tab-check:checked + .tab-button:last-of-type {
+  border-left: none;
+  border-bottom: none;
+}
+.author-works .container-works .tab-check:checked + .tab-button:hover {
+  background: transparent; 
+  color: black
+}
+.author-works .container-works .tab-check:checked + .tab-button + .tab-page {
+  display: block;
+  transition: opacity 500ms
+}
+.author-works .container-works .tab-button {
+  box-sizing: border-box; 
+  cursor: pointer; 
+  display: block; 
+  width: 20%; 
+  min-height: 35px;
+  padding: 5px;
+  border: lightgray solid 1px; 
+  border-top: transparent solid 1px; 
+  text-align: center; 
+  transition: color 100ms, background 200ms
+}
+.author-works .container-works .tab-button:hover {
+  background: grey; 
+  color: white
+}
+.author-works .container-works .tab-page {
+  display: none;
+  overflow: hidden; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 70%; 
+  height: 100%; 
+  max-height: 100%; 
+  margin: 0; 
+  border: lightgray solid 1px;
+  margin-left: 19.9%;
+  padding: 0 5%;  
+}
+
+.author-works .container-works .tab-page .tab-work{
+    padding-top: 0;
+    padding: 5px;
+}
+
+.author-works .container-works .tab-page .tab-work .title{
+    font-size: 125%;
+}
+
+.author-works .container-works .tab-page .tab-work .body {
+    text-align: justify;
+}
+
+.author-works .container-works .tab-page .tab-work .body .poetry {
+    text-align: center;
+}
+
+.author-works .container-works .tab-page .tab-work .footer {
+    width: 100%;
+    text-align: center;
+}
+
+.work {
+    margin: 2px;
+    padding: 10px; 
+}
+
+.work .work-title {
+    text-align: center;
+}
+
+.work .work-body {
+    padding: 5px;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.about {
+    margin: 2px;
+    padding: 10px; 
+}
+
+.about .about-title {
+    text-align: center;
+}
+
+.about .about-body {
+    padding: 5px;
+    overflow-y: auto;
+    height: 300px;
+    text-align: justify;
+}
+
+.item-bordered {
+    border: lightgray solid 1px;
+    margin: 2px;
+}
+
+.item-bordered:hover {
+    border-color: gray;
+    color: white;
+    background-color: lightgray;
+}
+
+.item-bordered h4 {
+    line-height: bold
+}
+
+.author figure{
+    text-align: center;
+}
+
+.author figure img {
+    max-height: 200px;
+}
+
+.list .item figure{
+    text-align: center;
+}
+
+.list .item figure img {
+    max-height: 200px;
+}
+
+.submit {
+    padding: 25px;
+    margin: 10px;
+    margin: 0 auto;
+}
+
+.submit h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+.submit p {
+    text-align: justify;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+.submit-form {
+    padding: 5px;
+}
+
+.submit-form h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.submit-form .form-header {
+    padding: 5px;
+    border-bottom: gray solid 1px;
+    width: 95%;
+    margin-bottom: 5px;
+}
+
+.submit-form .form-body {
+    border: lightgray solid 1px;
+    padding: 5px;
+    width: 95%;
+}
+
+.submit-form .form-body p {
+    padding: 10px;
+}
+
+.submit-form .form-body .form {
+    padding: 10px;
+    display: table;
+}
+
+.submit-form .form-body .form select {
+    background-color: white;
+    color: gray;
+    border: lightgray 1px solid;
+    padding: 5px;
+}
+
+.submit-form .form-body .form textarea {
+    background-color: white;
+    color: gray;
+    border: lightgray 1px solid;
+    padding: 5px;
+}
+
+.submit-form .form-body .form .input-lg {
+    width: 90%;
+    margin: 2px;
+}
+
+.submit-form .form-body .form .input-mg {
+    width: 60%;
+    margin: 2px;
+}
+
+.submit-form .form-body .form .input-md {
+    width: 45%;
+    margin: 2px;
+}
+
+.submit-form .form-body .form .input-sm {
+    width: 30%;
+    margin: 2px;
+}
+
+.submit-form .form-body .form .input-xs {
+    width: 10%;
+    margin: 2px;
+}
+
+.submit-form .form-body .form .input-sxs {
+    width: 5%;
+    margin: 2px;
+}
+
+.footer {
+  background-color: lightgray;
+  height: 5em;
+  padding: 1em;
+}

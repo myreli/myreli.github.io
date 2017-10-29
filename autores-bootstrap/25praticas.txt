@@ -1,0 +1,9 @@
+1) 01 Destaque seus calls-to-action
+2) 02 Mantenha os menus curtos
+3) 03 Facilite a volta para a página principal
+4) 04 Não permita que as promoções roubem a cena
+5) 05 Torne o campo de busca visível
+6) 09 Navegação sem cadastro inicial
+7) 14 Simplifique a entrada de informações
+8) 19 Otimize o site inteiro para mobile
+9) 20 Não force o zoom na tela
