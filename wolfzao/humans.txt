@@ -1,0 +1,29 @@
+/* Humans.txt */
+    "We Are People, Not Machines"
+    About humans.txt: http://humanstxt.org/
+
+/* People behind The South Coders on this website */
+
+
+/* AUTHORS */
+    Myreli Borba
+    Development, Illustration, Web Design, UX
+    Twitter: @borbamyreli
+    From: Brazil
+
+
+/* THANKS */
+
+    EN Translator: Someone
+    Twitter: @someone
+    From: Somewhere
+    
+    Images & stuff: https://unsplash.com/
+        
+
+/* SITE */
+    Last update: 2017-09-28
+    Languages: Portuguese / English
+    Doctype: HTML5
+
+    IDE: Sublime Text, Photoshop
