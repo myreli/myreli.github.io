@@ -1373,7 +1373,6 @@ footer .footer-nav ul.footer-secondary-nav li {
   }
   
   .left-half {
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1382,7 +1381,6 @@ footer .footer-nav ul.footer-secondary-nav li {
   }
   
   .right-half {
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
