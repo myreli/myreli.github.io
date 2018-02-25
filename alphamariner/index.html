@@ -46,16 +46,22 @@
 					<nav>
 						<ul class="primary-nav">
 							<li>
-								<a href="#intro">Sobre</a>
+								<a href="#intro" data-i18n="nav.links.about">Sobre</a>
 							</li>
 							<li>
-								<a href="#team">Serviços</a>
+								<a href="#team" data-i18n="nav.links.services">Serviços</a>
 							</li>
 							<li>
-								<a href="#contact">Contato</a>
+								<a href="#contact" data-i18n="nav.links.contact">Contato</a>
 							</li>
 							<li>
-								<a href="certificado.html">Clientes</a>
+								<a href="certificado.html" data-i18n="nav.links.clients">Clientes</a>
+							</li>
+							<li>
+								<ul class="menu-lang">
+									<a href="#" class="setLanguage" data-lang="en"> EN </a> |
+									<a href="#" class="setLanguage" data-lang="pt"> PT </a>
+								</ul>
 							</li>
 						</ul>
 					</nav>
@@ -78,13 +84,12 @@
 						<div class="col-md-12 text-center">
 							<h1>ALPHA MARINER FUMIGATION
 								<br/>
-								<small style="font-size: 50% ">
+								<small style="font-size: 50%" data-i18n="header.intro" >
 									A Alphamariner Fumigation é uma empresa estabelecida na cidade do Rio Grande que atua na área de controle de pragas embarcados
 									em navios, caminhões e vagões de trens ou estocados em silos e armazéns.
 								</small>
-
 							</h1>
-							<a href="#intro" class="btn primary">Saiba MaIS</a>
+							<a href="#intro" class="btn primary" data-i18n="shared.btn.learnMore">Saiba MaIS</a>
 						</div>
 					</div>
 				</div>
@@ -97,10 +102,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="section-title">Quem Somos?</h1>
+					<h1 class="section-title" data-i18n="sections.about.title">Quem Somos?</h1>
 				</div>
 				<div class="col-md-12 text-center">
-					<p>A
+					<p data-i18n="sections.about.body">A
 						<span class="bold">Alpha Mariner Fumigation LTDA</span> é uma empresa especializada em tratamentos fitossanitários e quarentenários que está, desde 2001, no mercado. Atuamos executando tratamentos de fumigação em cargas embarcadas em porẽs de navios como soja, farelo de soja, arroz, milho, cevada e trigo.
 					</p>
 				</div>
@@ -112,10 +117,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="section-title">Nossa política de qualidade</h1>
+					<h1 class="section-title" data-i18n="sections.policy.title">Nossa política de qualidade</h1>
 				</div>
 				<div class="col-md-12">
-					<p class="text-center">
+					<p class="text-center" data-i18n="sections.policy.body">
 						Antecipar-se e interpretar as necessidades dos clientes, oferecendo soluções imediatas que venham a satisfazer suas exigências e expectativas nos níveis requeridos e negociados. Tudo para garantir sua satisfação!
 					</p>
 				</div>
@@ -127,10 +132,10 @@
 		<div class="container" style="padding: 20px; background: rgba(255, 255, 255, 0.5);">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="section-title">Nossa equipe, nossa maior força</h1>
+					<h1 class="section-title" data-i18n="sections.team.title">Nossa equipe, nossa maior força</h1>
 				</div>
 				<div class="col-md-12">
-					<p class="text-center">
+					<p class="text-center" data-i18n="sections.team.body">
 						Contamos com uma equipe de profissionais capacitados e treinados, constantemente sendo supervisionados por Engenheiros Agrônomos altamente atualizados com as novas tecnologias quanto ao estudo das formulações, dosagens de produtos e suas classes toxicológicas e seguindo rigorosamente os critérios exigidos pelo Ministério da Agricultura, órgãos ambientais e institutos normativos internacionais. Tudo para garantir o melhor e mais eficaz tratamento de preservação e conservação de commodities desde sua origem até seu destino final.
 					</p>
 				</div>
@@ -142,10 +147,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="section-title">Legislação</h1>
+						<h1 class="section-title" data-i18n="sections.legislation.title">Legislação</h1>
 					</div>
 					<div class="col-md-12">
-						<p>
+						<p data-i18n="sections.legislation.body">
 							Nosso trabalho atende a todas as leis nacionais e internacionais, normas e portarias de órgãos reguladores e cláusulas contratuais dos clientes, aplicáveis ao controle da nossa atividade e a preservação e manutenção do meio ambiente.	
 						</p>
 					</div>
@@ -155,51 +160,51 @@
 
 	<!-- Services Section -->
 	<section class="crew alternate-bg" id="team">
-		<div class="service">
-			<div class="service-content left-half" style="background-image: url(img/service1.jpg);">
+		<div class="row">
+			<div class="col-md-6 service-content left-half" style="background-image: url(img/service1.jpg);">
 			</div>
-			<div class="service-content right-half">
+			<div class="col-md-6">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="section-title">Tratamentos Fitossanitários e Quarentenarios</h1>
+						<h1 class="text-center" data-i18n="sections.services.first.title">Tratamentos Fitossanitários e Quarentenarios</h1>
 					</div>
-					<div class="col-md-12">
-						<p class="text-center">
+					<div class="col-md-12 text-center" data-i18n="[html]sections.services.first.body">
+						<p>
 							- Fumigação com <em>Sachets, Sleeves</em> e <em>Tablets</em>
 						</p>
-						<p class="text-center">
+						<p>
 							- Fumigação com J-System (Recirculação ou Exaustão)
 						</p>
-						<p class="text-center">
+						<p>
 							- Fumigação em Contêiners
 						</p>
-						<p class="text-center">
+						<p>
 							- Tratamento Fungistático e contra Salmonela
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="service">
-				<div class="service-content left-half">
+		<div class="row">
+				<div class="col-md-6">
 					<div class="row">
 						<div class="col-md-12">
-							<h1 class="section-title">Tratamentos Domissanitários</h1>
+							<h1 class="text-center" data-i18n="sections.services.second.title">Tratamentos Domissanitários</h1>
 						</div>
-						<div class="col-md-12">
-							<p class="text-center">
+						<div class="col-md-12 text-center" data-i18n="[html]sections.services.second.body">
+							<p>
 								- Controle de Pestes
 							</p>
-							<p class="text-center">
+							<p>
 								- Desratização
 							</p>
-							<p class="text-center">
+							<p>
 								- Higienização de sistemas de ar condicionado
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="service-content right-half" style="background-image: url(img/service2.jpg);">
+				<div class="col-md-6 service-content right-half" style="background-image: url(img/service2.jpg);">
 				</div>
 			</div>
 	</section>
@@ -208,10 +213,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="section-blue-title">M<spam style="color: #fff">issão</spam></h1>
+					<h1 class="section-blue-title" data-i18n="[html]sections.mission.title">M<spam style="color: #fff">issão</spam></h1>
 				</div>
 				<div class="col-md-12">
-					<p class="text-center" style="color: #fff">Ser uma empresa com excelência profissional no controle de pragas, oferecendo soluções integradas no foco do exportador, respeitando a humanidade, o meio ambiente e garantindo a plena satisfação do cliente e conseqüentemente a perpetuação da empresa no mercado.</p>
+					<p class="text-center" style="color: #fff" data-i18n="sections.mission.body">Ser uma empresa com excelência profissional no controle de pragas, oferecendo soluções integradas no foco do exportador, respeitando a humanidade, o meio ambiente e garantindo a plena satisfação do cliente e conseqüentemente a perpetuação da empresa no mercado.</p>
 				</div>
 			</div>
 		</div>
@@ -221,10 +226,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="section-title">Política</h1>
+					<h1 class="section-title" data-i18n="sections.policy.resume.title">Política</h1>
 				</div>
 				<div class="col-md-12">
-					<p class="text-center">
+					<p class="text-center" data-i18n="sections.policy.resume.body">
 						Entender as necessidades dos clientes, satisfazendo suas expectativas nos níveis requeridos e negociados.
 					</p>
 				</div>
@@ -237,10 +242,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="section-title">Licenças e Associações</h1>
+					<h1 class="section-title" data-i18n="sections.license.title">Licenças e Associações</h1>
 				</div>
 				<div class="col-md-12">
-					<p class="text-center">
+					<p class="text-center" data-i18n="sections.license.body">
 						Nosso trabalho atende a todas as leis nacionais e internacionais, normas e portarias de órgãos reguladores e cláusulas contratuais dos clientes, aplicáveis ao controle da nossa atividade e a preservação e manutenção do meio ambiente.	
 					</p>
 				</div>
@@ -265,27 +270,27 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="section-title">Contate-nos</h1>
+					<h1 class="section-title" data-i18n="sections.contact.title">Contate-nos</h1>
 				</div>
 			</div>
 			<div class="row is-centered">
-				<p>Preencha as informações abaixo e aguarde nossa resposta em alguns dias. </p>
-				<p class="mail-error">Não foi possível receber sua mensagem agora. Tente novamente. </p>
-				<p class="mail-sent">Enviado! Em breve você receberá a resposta em seu e-mail. </p>
+				<p data-i18n="sections.contact.description">Preencha as informações abaixo e aguarde nossa resposta em alguns dias.</p>
+				<p class="mail-error" data-i18n="sections.contact.message.error">Não foi possível receber sua mensagem agora. Tente novamente.</p>
+				<p class="mail-sent" data-i18n="sections.contact.message.sent" >Enviado! Em breve você receberá a resposta em seu e-mail.</p>
 				<form class="form">
 					<div class="form-group col-md-6">
-						<input class="form-control" type="" name="" placeholder="Nome">
+						<input class="form-control" type="text" name="name" data-i18n="[placeholder]sections.contact.name.placeholder">
 					</div>
 					<div class="form-group col-md-6">
-						<input class="form-control" type="" name="" placeholder="E-mail">
+						<input class="form-control" type="email" name="email" data-i18n="[placeholder]sections.contact.email.placeholder">
 					</div>
 					<div class="form-group col-md-12">
-						<input class="form-control" type="" name="" placeholder="Assunto">
+						<input class="form-control" type="text" name="subject" data-i18n="[placeholder]sections.contact.subject.placeholder">
 					</div>
 					<div class="form-group col-md-12">
-						<textarea class="form-control" placeholder="Mensagem"></textarea>
+						<textarea class="form-control" name="message" data-i18n="[placeholder]sections.contact.message.placeholder"></textarea>
 					</div>
-					<a href="#intro" class="btn secondary view-more">Enviar</a>
+					<button type="submit" class="btn secondary view-more" data-i18n="shared.btn.send"></a>
 				</form>
 
 			</div>
@@ -330,12 +335,12 @@
 					<ul>
 						<li>
 							<p>
-								&copy; 2017 Alpha Mariner Fumigation. Todos os direitos reservados.
+								&copy; 2017 Alpha Mariner Fumigation. <spam data-i18n="footer.copyright.rights">Todos os direitos reservados.</spam>
 							</p>
 						</li>
 						<li>
 							<p>
-								Desenvolvido por <br/>
+								<span data-i18n="footer.copyright.developer">Desenvolvido por </span> <br/>
 								<a href="http://thesouthcoders.com" target="_blank">
 									<img src="https://myreli.github.io/amemnu/img/wolf.png" style="max-height: 50px">
 								</a>
@@ -355,6 +360,13 @@
 	<script>
 		window.jQuery || document.write('<script src="js/min/jquery-1.11.2.min.js"><\/script>')
 	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js" ></script>
+	<script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
+	<script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+	<script src="js/translate.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 	<script src="js/min/bootstrap.min.js"></script>
 	<script src="js/min/retina.min.js"></script>

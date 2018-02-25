@@ -1365,6 +1365,7 @@ footer .footer-nav ul.footer-secondary-nav li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
   }
   
   .service {
@@ -1376,16 +1377,14 @@ footer .footer-nav ul.footer-secondary-nav li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex: 1;
-    padding: 1rem;
+    padding: 10rem;
   }
   
   .right-half {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex: 1;
-    padding: 1rem;
+    padding: 10rem;
   }
   .mail-error {
       color: #d9534f;

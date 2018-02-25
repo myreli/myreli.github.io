@@ -1,5 +1,5 @@
-@import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
 ::-moz-selection {
 	background: #ffffff;
 	color: #222222;
@@ -9,6 +9,10 @@
 	background: #ffffff;
 	color: #222222;
 }
+
+/***
+	Base CSS - thanks to w3Schools
+***/
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -49,15 +53,13 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
-/* Box Model */
-
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-/* Basic */
+/* Site */
 
 @-ms-viewport {
 	width: device-width;
@@ -87,8 +89,6 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after, body.is-sw
 	-ms-transition-delay: none !important;
 	transition-delay: none !important;
 }
-
-/* Type */
 
 html {
 	font-size: 16pt;
