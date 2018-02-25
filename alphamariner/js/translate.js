@@ -13,7 +13,7 @@
     .use(window.i18nextXHRBackend)
     .use(i18nextBrowserLanguageDetector)
     .init({
-      fallbackLnh: 'en',
+      fallbackLnh: 'pt',
       debug: true,
       backend: { // evtl. load via xhr https://github.com/i18next/i18next-xhr-backend
         loadPath: 'js/locales/{{lng}}.json'

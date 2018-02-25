@@ -74,6 +74,25 @@
       "subject": {
         "placeholder": "Assunto"
       }
+    },
+    "certification": {
+      "title": "Certificados Online Alpha Mariner",
+      "description": "Valide um certificado ou revise e emita os seus.",
+      "menu": {
+        "validate": "Validar",
+        "emit": "Emitir"
+      },
+      "form": {
+        "cod": {
+          "placeholder": "Código"
+        }, 
+        "user": {
+          "placeholder": "Usuário"
+        }, 
+        "password": {
+          "placeholder": "Senha"
+        }
+      }
     }
   },
   "footer": {

@@ -30,47 +30,67 @@
     
 
     <!-- NAVBAR -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="header-nav-wrapper">
-                <div class="logo">
-                    <a href="index.html"><h2 class="text-uppercase">Alpha<span style="color: #13B1CD">mariner</span></h2></a>
-                </div>
-                <div class="primary-nav-wrapper">
-                    <nav>
-                        <ul class="primary-nav">
-                            <li><a href="#intro">Empresa</a></li>
-                            <li><a href="#team">Serviços</a></li>
-                            <li><a href="#articles">Informações</a></li>
-                            <li><a href="#freebies">RH</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="navicon">
-                    <a class="nav-toggle" href="#"><span></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header-nav-wrapper">
+				<div class="logo">
+					<a href="index.html">
+						<h2 class="text-uppercase">Alpha
+							<span style="color: #13B1CD">mariner</span>
+						</h2>
+					</a>
+				</div>
+				<div class="primary-nav-wrapper">
+					<nav>
+						<ul class="primary-nav">
+							<li>
+								<a href="#intro" data-i18n="nav.links.about">Sobre</a>
+							</li>
+							<li>
+								<a href="#team" data-i18n="nav.links.services">Serviços</a>
+							</li>
+							<li>
+								<a href="#contact" data-i18n="nav.links.contact">Contato</a>
+							</li>
+							<li>
+								<a href="certificado.html" data-i18n="nav.links.clients">Clientes</a>
+							</li>
+							<li>
+								<ul class="menu-lang">
+									<a href="#" class="setLanguage" data-lang="en"> EN </a> |
+									<a href="#" class="setLanguage" data-lang="pt"> PT </a>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="navicon">
+					<a class="nav-toggle" href="#">
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
     
     <!-- Certification section -->
     <section class="has-padding" id="certification">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="section-title">Certificados Online Alpha Mariner</h1>
+                    <h1 class="section-title" data-i18n="sections.certification.title">Certificados Online Alpha Mariner</h1>
                 </div>
             </div>
             <div class="row is-centered">
-                <p>Valide um certificado ou revise e emita os seus.</p>
+                <p data-i18n="sections.certification.description">Valide um certificado ou revise e emita os seus.</p>
                 
                 <div class="tab col-md-4 col-md-offset-4">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="active">
-                            <a href="#validate" role="tab" data-toggle="tab">Validar</a>
+                            <a href="#validate" role="tab" data-toggle="tab" data-i18n="sections.certification.menu.validate">Validar</a>
                         </li>
                         <li>
-                            <a href="#login" role="tab" data-toggle="tab">Emitir</a>
+                            <a href="#login" role="tab" data-toggle="tab" data-i18n="sections.certification.menu.emit">Emitir</a>
                         </li>
                     </ul>
 
@@ -78,20 +98,20 @@
                         <div class="tab-pane active" id="validate">
                             <form class="form">
                                 <div class="form-group col-md-12">
-                                    <input class="form-control" type="text" name="certificado" placeholder="Código">
+                                    <input class="form-control" type="text" name="certificado" data-i18n="[placeholder]sections.certification.form.cod.placeholder">
                                 </div>
-                                <button type="button" id="sendCode" class="btn secondary view-more">Enviar</button>
+                                <button type="button" id="sendCode" class="btn secondary view-more" data-i18n="shared.btn.send"></button>
                             </form>
                         </div>
                         <div class="tab-pane" id="login">
                             <form class="form">
                                 <div class="form-group col-md-12">
-                                    <input class="form-control" type="text" name="" placeholder="Usuário">
+                                    <input class="form-control" type="text" name="user" data-i18n="[placeholder]sections.certification.form.user.placeholder">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <input class="form-control" type="password" name="" placeholder="Senha">
+                                    <input class="form-control" type="password" name="password" data-i18n="[placeholder]sections.certification.form.password.placeholder">
                                 </div>
-                                <button type="button" id="sendData" class="btn secondary view-more">Enviar</button>
+                                <button type="button" id="sendData" class="btn secondary view-more" data-i18n="shared.btn.send"></button>
                             </form>
                         </div>
                     </div>
@@ -123,35 +143,46 @@
             </div>
             <div class="row">
                 <div class="col-md-12 footer-nav text-center">
-                    <ul>
-                        <li>
-                            <p>
-                            &copy; 2017 Alphamariner. Todos os direitos reservados.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                            Desenvolvido por <a href="http://thesouthcoders.com/"><em>The South Coders</em></a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <i class="fa fa-twitter"></i>
-                                <i class="fa fa-globe"></i>
-                                <i class="fa fa-linkedin"></i>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+					<ul>
+						<li>
+							<p>
+								&copy; 2017 Alpha Mariner Fumigation. <spam data-i18n="footer.copyright.rights">Todos os direitos reservados.</spam>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span data-i18n="footer.copyright.developer">Desenvolvido por </span> <br/>
+								<a href="http://thesouthcoders.com" target="_blank">
+									<img src="https://myreli.github.io/amemnu/img/wolf.png" style="max-height: 50px">
+								</a>
+							</p>
+						</li>
+					</ul>
+				</div>
             </div>
         </div>
     </footer>
     
     <!-- Scripts -->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-    <script src="js/min/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<!-- jQuery fallback -->
+	<script>
+		window.jQuery || document.write('<script src="js/min/jquery-1.11.2.min.js"><\/script>')
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js" ></script>
+	<script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
+	<script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+	<script src="js/translate.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="js/min/bootstrap.min.js"></script>
+	<script src="js/min/retina.min.js"></script>
+	<script src="js/scripts.js"></script>
+    
     <script type="text/javascript">
         $(document).ready(function () {
             $("#sendCode").on("click", function () {
