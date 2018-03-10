@@ -16,46 +16,42 @@
     }
   },
   "header": {
-    "intro": "missing intro translation"
+    "intro": "Alpha Mariner, it is a company that started its activities in 2001 in the city of Rio Grande/Brazil, performing phytosanitary treatments in export cargoes loaded into vessel's holds, trucks and train wagons or stored in  silos and warehouses."
   },
   "sections": {
     "about": {
       "title": "Who Are We?",
-      "body": "We are Alpha Mariner Fumigation LTDA. A company specialized in phytosanitary and quarantine treatment and we have being in the market since 2001. We act executing fumigation treatments on cargo loaded on board vessel's holds, such as soybean, soybean meal, rice, corn, barley and wheat."
+      "body": "We are Alpha Mariner Fumigation Ltda, a company specialized in phytosanitary and quarantine treatment and we have being in the Market since 2001. We act executing fumigation treatments on export cargo loaded on board vessel's holds, such as soyabeans, soyabeanmeal, rice, corn, barley and wheat."
     },
     "mission": {
       "title": "M<spam style='color: #fff'>ission</spam>",
-      "body": "misssing mission translation."
+      "body": "Be a company with professional excellence concerning phytosanitary treatments, offering integrated solutions to export companies, respecting the humanity, environment and always do our best to ensure the achievement of our client's requirements."
     },
     "policy": {
       "title": "Our Quality Policy",
-      "body": "To antecipate and interpret clients needs, offering immediate solutions to satisfy theirs needs, demands and expectations on the required and negotiated levels. All this, to guaranty their satisfaction.",
-      "resume": {
-        "title": "Policy",
-        "body": "missing policy translation."
-      }
+      "body": "To anticipate and interpret clients needs, offering immediate solutions to satisfy their needs, demands and expectations on the required and negotiated levels. All this to guaranty theirs satisfaction."
     },
     "team": {
       "title": "Our Team, Our Biggest Strength",
-      "body": "We count on a team of capable and trained professionals. Who are constantly supervised by agronomist engineers updated with new technologies about formulations and dosing of products and its toxicological classes. Following strictly the criteria set by the Ministry of Agriculture from Brazil, environmental agencies and international normative intitutions. All this, to ensure the best and most effective treatment for preservation and conservation of commodities, from its origin to its final destination."
+      "body": "We count on a team of capable and trained professionals, who are constantly supervised by agronomist engineers updated with new technologies about formulations and dosing of products and its toxicological classes. Following strictly the criteria set by the Ministry of Agriculture from Brazil, environmental agencies and international normative institutions.<p>All this, to ensure the best and most effective treatment for preservation and conservation of commodities, from its origin to its final destination.</p>"
     },
     "legislation": {
       "title": "Legislation",
-      "body": "Our work suits all national and international laws, standards and ordinances from regulatory intitutions and client's contractual clauses, applicable to the control of our activity and preservations and maintaining of the enviroment."
+      "body": "Our work suits all national and international laws, standards and ordinances from regulatory institutions and client's contractual clauses, applicable to the control of our activity and preservation and maintaining of the environment."
     },
     "services": {
       "first": {
-        "title": "Phytosanitary and Quarantine treatments",
-        "body": "<p> - Fumigation using sachets, sleeves and tablets </p> <p> - Fumigation using J-System (recirculation and exhaustion) </p> <p> - Fumigation in containers </p> <p> - Fungistatic treatment against salmonella </p>"
+        "title": "Phytosanitary and Quarantine Treatments",
+        "body": "<p> - Fumigation using sachets, sleeves and tablets </p> <p> - Fumigation using J-system (recirculationand exhaustion) </p> <p> - Fumigation in containers </p> <p> - Fungistatic treatment against salmonella </p>"
       },
       "second": {
-        "title": "Household Cleaning treatments",
-        "body": "<p> - Pest control </p> <p> - Mice & Rats control </p> <p> - Air Conditioned Cleaning </p>"
+        "title": "Household Cleaning Treatments",
+        "body": "<p> - Pest Control </p> <p> - Mice and Rats Control </p> <p> -  Air Conditioned Cleaning </p>"
       }
     },
     "license": {
       "title": "Licenses and Affiliations",
-      "body": "We do all to ensure a safe and correct actuation, following the parameteres demanded by law and supervisory bodies from Brazil, keeping licenses and affiliations always up to date."
+      "body": "We do all to ensure a safe and correct execution of four activities, following the parameters demanded by law and supervisory bodies, keeping  licenses and affiliations always up to date."
     },
     "contact": {
       "title": "Get in Touch",
