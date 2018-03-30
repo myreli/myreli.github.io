@@ -204,6 +204,16 @@ a.text-link:hover:after {
     background-size: cover;
 }
 
+.img-bg {
+    background-color: transparent;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20%;
+}
+
+
 .footer-bg {
     background-color: #414A52
 }
@@ -353,6 +363,12 @@ input:focus, textarea:focus {
     padding-bottom: 10px;
     text-decoration: none;
     color: #fff
+}
+
+.header-nav-wrapper nav ul li a img {
+    max-width: 32px;
+    padding: 0;
+    border: 0;
 }
 
 .header-nav-wrapper nav ul li a:hover {
