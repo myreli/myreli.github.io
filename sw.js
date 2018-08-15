@@ -12,7 +12,7 @@ this.addEventListener('install', function (event) {
                 '/js/script.js',
                 '/js/skel.min.js',
                 '/js/util.js',
-                '/manifest.js',
+                '/manifest.json',
                 '/images/bg.jpg'
             ]);
         })
