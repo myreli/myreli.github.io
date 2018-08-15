@@ -12,6 +12,13 @@ this.addEventListener('install', function (event) {
                 '/',
                 '/index.html',
                 '/assets/css/style.css',
+                '/assets/js/jquery.min.js',
+                '/assets/js/script.js',
+                '/assets/js/util.js',
+                '/assets/js/skel.min.js',
+                '/images/bg.jpg',
+                '/images/loader.svg',
+                '/images/overlay.png',
                 '/sw.js',
                 '/manifest.json',
             ]);
