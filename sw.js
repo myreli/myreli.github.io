@@ -5,15 +5,15 @@ this.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(CACHE_NAME).then(function (cache) {
             return cache.addAll([
-                './',
-                './index.html',
-                './assets/css/styles.css',
-                './js/jquery.min.js',
-                './js/script.js',
-                './js/skel.min.js',
-                './js/util.js',
-                './manifest.js',
-                './images/bg.jpg'
+                '/',
+                '/index.html',
+                '/assets/css/styles.css',
+                '/js/jquery.min.js',
+                '/js/script.js',
+                '/js/skel.min.js',
+                '/js/util.js',
+                '/manifest.js',
+                '/images/bg.jpg'
             ]);
         })
     )
