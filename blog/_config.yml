@@ -2,8 +2,10 @@ title:             Myreli Borba
 email:             borbamyreli@gmail.com
 description:       Personal blog, sharing lines of code and pieces of my life.
 author:            myreli
-baseurl:           "/blog"
 url:               "http://myreli.dev/blog"
+baseurl:           "/blog"
+production_url :   http://myreli.github.io.com/blog
+BASE_PATH :        http://myreli.com/blog
 
 # Social Profiles
 twitter_username:  borbamyreli
