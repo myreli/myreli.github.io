@@ -1,0 +1,42 @@
+{
+  "header": {
+    "nav": {
+      "social": {
+        "github": "Github",
+        "twitter": "Twitter",
+        "linkedin": "Linkedin",
+        "blog": "Writing"
+      },
+      "about": "About",
+      "work": "Career",
+      "contact": "Contact"
+    },
+    "content": {
+      "title": "Myreli",
+      "subtitle": "Full Stack Developer. Software Architect. Tech Lead. UI/UX."
+    }
+  },
+  "main": {
+    "intro": {
+      "title": "Myreli Borba",
+      "about": ""
+    },
+    "work": {
+      "title": "Career",
+      "body": ""
+    },
+    "contact": {
+      "title": "Get in touch",
+      "or": "Or",
+      "inputs": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send message",
+        "keybase": "Keybase",
+        "telegram": "Telegram"
+      }
+    }
+  }
+}

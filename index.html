@@ -26,35 +26,43 @@
 				<nav>
 					<ul>
 						<li>
-							<a target="_blank" href="https://github.com/myreli">github</a>
+							<a data-i18n="header.nav.about" href="#intro">Sobre</a>
 						</li>
 						<li>
-							<a target="_blank" href="https://twitter.com/borbamyreli">twitter</a>
+							<a data-i18n="header.nav.work" href="#work">Carreira</a>
 						</li>
 						<li>
-							<a target="_blank" href="https://www.linkedin.com/in/myreli/">linkedin</a>
+							<a data-i18n="header.nav.contact" href="#contact">Contato</a>
 						</li>
 						<li>
-							<a target="_blank" href="/blog">Blog</a>
+							<button type="button" class="half first set-language" data-lang="en">EN</button><button
+								type="button" class="half set-language" data-lang="pt">PT</button>
 						</li>
 					</ul>
 				</nav>
 				<div class="content">
 					<div class="inner">
-						<h1>Myreli</h1>
-						<p>Arquitetura, Análise e Desenvolvimento de Sistemas. UI/UX. </p>
+						<h1 data-i18n="header.content.title">Myreli</h1>
+						<p data-i18n="header.content.subtitle">Arquitetura, Análise e Desenvolvimento de Software.
+							UI/UX. </p>
 					</div>
 				</div>
 				<nav>
 					<ul>
 						<li>
-							<a href="#intro">Sobre</a>
+							<a target="_blank" data-i18n="header.nav.social.blog" href="/blog">Blog</a>
 						</li>
 						<li>
-							<a href="#work">Carreira</a>
+							<a target="_blank" data-i18n="header.nav.social.github"
+								href="https://github.com/myreli">github</a>
 						</li>
 						<li>
-							<a href="#contact">Contato</a>
+							<a target="_blank" data-i18n="header.nav.social.twitter"
+								href="https://twitter.com/borbamyreli">twitter</a>
+						</li>
+						<li>
+							<a target="_blank" data-i18n="header.nav.social.linkedin"
+								href="https://www.linkedin.com/in/myreli/">linkedin</a>
 						</li>
 					</ul>
 				</nav>
@@ -63,8 +71,8 @@
 			<div id="main">
 
 				<article id="intro">
-					<h2>Myreli Borba</h2>
-					<p>
+					<h2 data-i18n="main.intro.title">Myreli Borba</h2>
+					<p data-i18n="[html]main.intro.about">
 						É <em>coder</em> e aspirante a tudo que der na cabeça, inclusive artista nas horas vagas.
 						Acredita que o mundo pode ser
 						mudado através de códigos – as palavras, a música e a programação.
@@ -74,12 +82,15 @@
 						Internet pelo IFRS e está cursando Análise e Desenvolvimento de Sistemas.
 						<!-- <br /><br />
 						Adora ler e curte conversar sobre tudo - principalmente tecnologia, arte e música. Recentemente decidiu tomar coragem e documentar tudo o que aprende, retribuindo tudo que recebeu da comunidade iniciando um <a target="_blank" href="/blog">blog</a>. -->
+						<hr />
+						<a target="_blank" href="https://myreli.dev/blog/about">Quer ler mais sobre mim?</a>
+
 					</p>
 				</article>
 
 				<article id="work">
-					<h2>Carreira</h2>
-					<p>
+					<h2 data-i18n="main.work.title">Carreira</h2>
+					<p data-i18n="main.work.body">
 						<strong>Desde 2019</strong> atuando também como Líder Técnica e Arquiteta de Software
 						<br />
 						<strong>Desde 2017</strong> atuando como desenvolvedora
@@ -108,31 +119,36 @@
 				</article>
 
 				<article id="contact">
-					<h2>Vamos conversar?</h2>
+					<h2 data-i18n="main.contact.title">Vamos conversar?</h2>
 					<form action="https://formspree.io/borbamyreli@gmail.com" method="POST">
 						<div class="field half first">
-							<input type="text" name="name" id="name" placeholder="Nome" autofocus required />
+							<input data-i18n="[input]main.contact.inputs.name" type="text" name="name" id="name"
+								placeholder="Nome" autofocus required />
 						</div>
 						<div class="field half">
-							<input type="text" name="_replyto" id="email" placeholder="E-mail" required />
+							<input data-i18n="[input]main.contact.inputs.email" type="text" name="_replyto" id="email"
+								placeholder="E-mail" required />
 						</div>
 						<div class="field">
-							<input type="text" name="subject" id="subject" placeholder="Assunto" />
+							<input data-i18n="[input]main.contact.inputs.subject" type="text" name="subject"
+								id="subject" placeholder="Assunto" />
 						</div>
 						<div class="field">
-							<textarea name="message" id="message" rows="2" placeholder="Mensagem" required></textarea>
+							<textarea data-i18n="[input]main.contact.inputs.message" name="message" id="message"
+								rows="2" placeholder="Mensagem" required></textarea>
 						</div>
 						<ul class="actions">
 							<li>
-								<input type="submit" value="Enviar mensagem" class="special" />
+								<input data-i18n="[input]main.contact.inputs.send" type="submit" value="Enviar mensagem"
+									class="special" />
 							</li>
-							<li>Ou: </li>
+							<li data-i18n="main.contact.inputs.or">Ou: </li>
 							<li>
-								<input type="button" value="Keybase"
+								<input data-i18n="[input]main.contact.inputs.keybase" type="button" value="Keybase"
 									onclick="window.open('https://keybase.io/myreli', '_blank');" />
 							</li>
 							<li>
-								<input type="button" value="telegram"
+								<input data-i18n="[input]main.contact.inputs.telegram" type="button" value="telegram"
 									onclick="window.open('https://t.me/myreli', '_blank');" />
 							</li>
 						</ul>
@@ -151,13 +167,19 @@
 
 	</div>
 
-	<!-- Library Scripts -->
+	<!-- TODO: improve js stuff -->
+	<!-- libs -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
-	<!-- Template Script -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>
+	<script src="//unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
+	<script src="//unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+	<!-- template -->
+	<script src="assets/js/translate.js"></script>
 	<script src="assets/js/script.js"></script>
-
+	<!-- service workers -->
 	<script src="sw.js"></script>
 
 </body>

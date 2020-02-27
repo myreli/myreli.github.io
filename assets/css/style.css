@@ -1190,6 +1190,15 @@ body.is-loading #bg:before {
 	border-bottom: 0;
 }
 
+#header nav ul li button.half {
+	box-shadow: none;
+	border-radius: 0;
+}
+
+#header nav ul li button.half.first {
+	border-right: 1px dashed;
+}
+
 #header nav ul li a:hover {
 	background-color: rgba(255, 255, 255, 0.075);
 }

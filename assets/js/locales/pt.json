@@ -1,0 +1,41 @@
+{
+  "header": {
+    "nav": {
+      "social": {
+        "github": "",
+        "twitter": "",
+        "linkedin": "",
+        "blog": ""
+      },
+      "about": "",
+      "work": "",
+      "contact": ""
+    },
+    "content": {
+      "title": "",
+      "subtitle": ""
+    }
+  },
+  "main": {
+    "intro": {
+      "title": "",
+      "about": ""
+    },
+    "work": {
+      "title": "",
+      "body": ""
+    },
+    "contact": {
+      "title": "",
+      "inputs": {
+        "name": "",
+        "email": "",
+        "subject": "",
+        "message": "",
+        "send": "",
+        "keybase": "",
+        "telegram": ""
+      }
+    }
+  }
+}
