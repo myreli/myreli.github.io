@@ -13,10 +13,8 @@ See anything weird? Please, [contact me](https://myreli.dev/#contact) or submit 
 git clone https://github.com/myreli/myreli.github.io
 # go to project folder
 cd myreli.github.io
-# install live server 
-npm i -g live-server
-# run http://localhost:1234
-live-server . --port=1234
+# run using live server
+npx live-server . --port=1234
 ```
 
 Hot reload is now enabled, you can see your changes live at http://localhost:1234.
@@ -63,10 +61,10 @@ i18next index.html
 # check assets/js/locales folder and edit new translations
 ```
 
-`index.html` is the source of truth. (for now). 
+`index.html` is the source of truth (for now). 
 
 ## Thanks
 
 - Bryan Goff (on Unsplash), for this beautiful main picture
 - @HugoGiraudel, for the sass functions 
-- Skel (skel.io), making responsive design less painful
+- Skel (skel.io), making responsive design less painful at the time I started this
