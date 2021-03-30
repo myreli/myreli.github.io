@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: myreli.dev
+Token: c2a481d489e4257720e58267706b6296d5bc20d7cc15d6581b302e4301b9534d
