@@ -1,187 +1,530 @@
-<!DOCTYPE HTML>
-
-<!--
-	Author: @myreli
--->
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Myreli Borba | Software Developer and Architect. Web Designer.</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name=description content="Myreli é uma Desenvolvedora e Arquiteta de Software que também atua na área de liderança técnica. Leia artigos, saiba mais ou entre em contato."/>
-	<link rel="stylesheet" href="assets/css/style.css" />
-	<link rel="manifest" href="manifest.json" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myreli</title>
+    <style>
+        /*
+        ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+        */
+        
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+
+        }
+
+        ::before,
+        ::after {
+            --tw-content: '';
+        }
+
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+        }
+
+        body {
+            margin: 0;
+
+            line-height: inherit;
+
+        }
+
+        hr {
+            height: 0;
+
+            color: inherit;
+
+            border-top-width: 1px;
+
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        code,
+        kbd,
+        samp,
+        pre {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+            font-size: 1em;
+
+        }
+
+        small {
+            font-size: 80%;
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        table {
+            text-indent: 0;
+
+            border-color: inherit;
+
+            border-collapse: collapse;
+
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+
+            font-feature-settings: inherit;
+
+            font-variation-settings: inherit;
+
+            font-size: 100%;
+
+            font-weight: inherit;
+
+            line-height: inherit;
+
+            color: inherit;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        [type='button'],
+        [type='reset'],
+        [type='submit'] {
+            -webkit-appearance: button;
+
+            background-color: transparent;
+
+            background-image: none;
+
+        }
+
+        :-moz-focusring {
+            outline: auto;
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none;
+        }
+
+        progress {
+            vertical-align: baseline;
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        [type='search'] {
+            -webkit-appearance: textfield;
+
+            outline-offset: -2px;
+
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+
+            font: inherit;
+
+        }
+
+        summary {
+            display: list-item;
+        }
+
+        blockquote,
+        dl,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        figure,
+        p,
+        pre {
+            margin: 0;
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0;
+        }
+
+        legend {
+            padding: 0;
+        }
+
+        ol,
+        ul,
+        menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        dialog {
+            padding: 0;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+
+            color: #9ca3af;
+
+        }
+
+        button,
+        [role="button"] {
+            cursor: pointer;
+        }
+
+        :disabled {
+            cursor: default;
+        }
+
+        img,
+        svg,
+        video,
+        canvas,
+        audio,
+        iframe,
+        embed,
+        object {
+            display: block;
+
+            vertical-align: middle;
+
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        [hidden] {
+            display: none;
+        }
+
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+        }
+
+        .m-2 {
+            margin: 0.5rem;
+        }
+
+        .m-4 {
+            margin: 1rem;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .h-screen {
+            height: 100vh;
+        }
+
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .border {
+            border-width: 1px;
+        }
+
+        .bg-neutral-900 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+        }
+
+        .p-2 {
+            padding: 0.5rem;
+        }
+
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .font-extralight {
+            font-weight: 200;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .text-neutral-100 {
+            --tw-text-opacity: 1;
+            color: rgb(245 245 245 / var(--tw-text-opacity));
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+
+        main {
+            background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)),
+                url("https://myreli.sirv.com/myreli.dev/dev.myreli.bg.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: background 300ms ease-in 200ms;
+        }
+
+        ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.075);
+        }
+
+        ul li a:active {
+            background-color: rgba(255, 255, 255, 0.175);
+        }
+
+        @media (min-width: 640px) {
+            .sm\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+    </style>
 </head>
 
 <body>
-	<div id="loader"></div>
+    <main class="flex h-screen flex-col items-center justify-center bg-neutral-900 text-white">
+        <header class="m-4 p-4 text-center">
+            <h1 class="m-2 text-4xl font-semibold">Myreli Borba</h1>
+            <p class="text-xl font-extralight text-neutral-100">Software Developer and Engineering Manager at CI&T</p>
+        </header>
 
-	<div id="page">
-		<div id="bg"></div>
-
-		<div id="wrapper">
-
-			<header id="header">
-				<nav>
-					<ul>
-						<li>
-							<a data-i18n="header.nav.about" href="#intro">Sobre</a>
-						</li>
-						<li>
-							<a data-i18n="header.nav.work" href="#work">Carreira</a>
-						</li>
-						<li>
-							<a data-i18n="header.nav.contact" href="#contact">Contato</a>
-						</li>
-						<li>
-							<button type="button" class="half first set-language" data-lang="en">EN</button><button
-								type="button" class="half set-language" data-lang="pt">PT</button>
-						</li>
-					</ul>
-				</nav>
-				<div class="content">
-					<div class="inner">
-						<h1 data-i18n="header.content.title">Myreli</h1>
-						<p data-i18n="header.content.subtitle">Arquitetura e Desenvolvimento de Software.</p>
-					</div>
-				</div>
-				<nav>
-					<ul>
-						<li>
-							<a target="_blank" data-i18n="header.nav.social.blog" href="/blog">Blog</a>
-						</li>
-						<li>
-							<a target="_blank" data-i18n="header.nav.social.github"
-								href="https://github.com/myreli">github</a>
-						</li>
-						<li>
-							<a target="_blank" data-i18n="header.nav.social.twitter"
-								href="https://twitter.com/myreliborba">twitter</a>
-						</li>
-						<li>
-							<a target="_blank" data-i18n="header.nav.social.linkedin"
-								href="https://www.linkedin.com/in/myreli/">linkedin</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-
-			<div id="main">
-
-				<article id="intro">
-					<h2 data-i18n="main.intro.title">Myreli Borba</h2>
-					<p data-i18n="[html]main.intro.about">
-						É <em>coder</em> e aspirante a tudo que der na cabeça, inclusive artista nas horas vagas.
-						Acredita que o mundo pode ser
-						mudado através de códigos – as palavras, a música e a programação.
-						<br /><br />
-						Formalmente atua como Líder Técnica e Desenvolvedora FullStack na <a target="_blank"
-							href="http://www.compasso.com.br">Compasso Uol</a>, é técnica em Informática para
-						Internet pelo IFRS e está cursando Análise e Desenvolvimento de Sistemas.
-						<!-- <br /><br />
-						Adora ler e curte conversar sobre tudo - principalmente tecnologia, arte e música. Recentemente decidiu tomar coragem e documentar tudo o que aprende, retribuindo tudo que recebeu da comunidade iniciando um <a target="_blank" href="/blog">blog</a>. -->
-						<hr />
-						<a target="_blank" href="https://myreli.dev/blog/about">Quer ler mais sobre mim?</a>
-
-					</p>
-				</article>
-
-				<article id="work">
-					<h2 data-i18n="main.work.title">Carreira</h2>
-					<p data-i18n="[html]main.work.body">
-						<strong>Desde 2019</strong> atuando também como Líder Técnica e Arquiteta de Software
-						<br />
-						<strong>Desde 2017</strong> atuando como desenvolvedora
-						<em>Full Stack</em> na
-						<a target="_blank" href="http://www.compasso.com.br">Compasso</a> e co-fundadora (e faz-tudo) da
-						<a target="_blank" href="http://www.thesouthcoders.com">The South Coders</a>
-						<br />
-						<strong>No inicio de 2017</strong> atuou como desenvolvedora
-						<em>Full Stack</em> estagiária na
-						<a target="_blank" href="http://www.rcadigital.com.br/">RCA Digital</a> e na
-						<a target="_blank" href="http://www.callidustecnologia.com.br/">Callidus Tecnologia</a>
-						<br />
-						<strong>Desde 2016</strong> atuando como desenvolvedora
-						<em>freelancer</em> e voluntária na comunidade
-						<a target="_blank" href="http://www.programaria.com">Programaria</a>
-						<br />
-						<strong>Desde 2015</strong> desbravando o mundo do
-						<em>web design</em> e da comunidade
-						<em>open source</em> com algumas contribuições ao redor do mundo.
-						<br />
-						<strong>Desde 2013</strong> em contato com o mundo da programação através do
-						<a target="_blank" href="http://ifrs.edu.br/">IFRS</a> em aulas e
-						<a target="_blank" href="http://lattes.cnpq.br/6188185272350370">projetos acadêmicos</a>
-
-					</p>
-				</article>
-
-				<article id="contact">
-					<h2 data-i18n="main.contact.title">Vamos conversar?</h2>
-					<form action="https://formspree.io/oi@myreli.dev" method="POST">
-						<div class="field half first">
-							<input data-i18n="[input]main.contact.inputs.name" type="text" name="name" id="name"
-								placeholder="Nome" autofocus required />
-						</div>
-						<div class="field half">
-							<input data-i18n="[input]main.contact.inputs.email" type="text" name="_replyto" id="email"
-								placeholder="E-mail" required />
-						</div>
-						<div class="field">
-							<input data-i18n="[input]main.contact.inputs.subject" type="text" name="subject"
-								id="subject" placeholder="Assunto" />
-						</div>
-						<div class="field">
-							<textarea data-i18n="[input]main.contact.inputs.message" name="message" id="message"
-								rows="2" placeholder="Mensagem" required></textarea>
-						</div>
-						<ul class="actions">
-							<li>
-								<input data-i18n="[input]main.contact.inputs.send" type="submit" value="Enviar mensagem"
-									class="special" />
-							</li>
-							<li data-i18n="main.contact.inputs.or">Ou: </li>
-							<li>
-								<input data-i18n="[input]main.contact.inputs.keybase" type="button" value="Keybase"
-									onclick="window.open('https://keybase.io/myreli', '_blank');" />
-							</li>
-							<li>
-								<input data-i18n="[input]main.contact.inputs.telegram" type="button" value="telegram"
-									onclick="window.open('https://t.me/myreli', '_blank');" />
-							</li>
-						</ul>
-					</form>
-				</article>
-			</div>
-
-			<footer id="footer">
-				<p class="copyright">
-					&copy; Myreli Borba 2017 - 2020. All rights Reserved.
-					<br /> Photo by Bryan Goff on Unsplash.
-				</p>
-			</footer>
-
-		</div>
-
-	</div>
-
-	<!-- TODO: improve js stuff -->
-	<!-- libs -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>
-	<script src="//unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
-	<script src="//unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
-	<!-- template -->
-	<script src="assets/js/translate.js"></script>
-	<script src="assets/js/script.js"></script>
-	<!-- service workers -->
-	<script src="sw.js"></script>
-
+        <ul class="grid grid-cols-1 p-4 font-extralight uppercase sm:grid-cols-4">
+            <li>
+                <a href="https://myreli.dev/blog" class="block border p-2 px-4 text-center">Blog</a>
+            </li>
+            <li>
+                <a href="https://github.com/myreli" class="block border p-2 px-4 text-center">GitHub</a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/myreli" class="block border p-2 px-4 text-center">LinkedIn</a>
+            </li>
+            <li>
+                <a href="mailto:myreli.dev.2o3eh@aleeas.com" class="block border p-2 px-4 text-center">Contact</a>
+            </li>
+        </ul>
+    </main>
 </body>
 
 </html>
